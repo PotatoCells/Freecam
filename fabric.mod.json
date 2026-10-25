@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "simplefreecam",
+  "version": "${version}",
+  "name": "Simple Freecam",
+  "description": "Client-side free camera. Press G to toggle, WASD to move, Space/Shift vertically.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": { "client": ["com.example.freecam.client.FreecamClient"] },
+  "mixins": [{ "config": "simplefreecam.mixins.json" }],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
